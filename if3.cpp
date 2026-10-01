@@ -3,35 +3,15 @@
 using namespace std;
 int main()
 {
-    int a,b,c;
-    cin>>a>>b>>c;
-
-    int largest;
-    int s1,s2;
-
-    if(a>=b && a>=c)
+    int age;
+    cin>>age;
+    if(age>=18)
     {
-        largest=a; s1=b; s2=c;
+        cout<<"eligible to vote";
     }
-    else
+    if(age<18)
     {
-        if(b>=a && b>=c)
-        {
-            largest=b; s1=a; s2=c;
-        }
-        else
-        {
-            largest=c; s1=a; s2=b;
-        }
-    }
-
-    if((s1*s1)+(s2*s2)==largest*largest)
-    {
-        cout<<"right angled triangle";
-    }
-    else
-    {
-        cout<<"not a right angled triangle";
+        cout<<"not eligible to vote";
     }
     return 0;
 }

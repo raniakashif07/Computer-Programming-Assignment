@@ -3,32 +3,19 @@
 using namespace std;
 int main()
 {
-    double weight,height;
-    cin>>weight>>height;
-
-    double bmi=weight/(height*height);
-
-    if(bmi<18.5)
+    int a,b;
+    cin>>a>>b;
+    if(a>b)
     {
-        cout<<"underweight, BMI="<<bmi;
+        cout<<a<<" is largest";
     }
-    else
+    if(b>a)
     {
-        if(bmi<25)
-        {
-            cout<<"normal weight, BMI="<<bmi;
-        }
-        else
-        {
-            if(bmi<30)
-            {
-                cout<<"overweight, BMI="<<bmi;
-            }
-            else
-            {
-                cout<<"obese, BMI="<<bmi;
-            }
-        }
+        cout<<b<<" is largest";
+    }
+    if(a==b)
+    {
+        cout<<"both are equal";
     }
     return 0;
 }

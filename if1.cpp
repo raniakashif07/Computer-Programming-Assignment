@@ -3,15 +3,15 @@
 using namespace std;
 int main()
 {
-    int n;
-    cin>>n;
-    if(n>0 && (n&(n-1))==0)
+    int a;
+    cin>>a;
+    if(a%2==0)
     {
-        cout<<n<<" is a power of 2";
+        cout<<"even";
     }
-    else
+    if(a%2!=0)
     {
-        cout<<n<<" is not a power of 2";
+        cout<<"odd";
     }
     return 0;
 }
